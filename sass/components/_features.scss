@@ -1,0 +1,39 @@
+@use '../abstracts/' as *;
+
+.features {
+  padding-block-start: size(32);
+
+  &-box {
+    display: inline-flex;
+    align-items: flex-end;
+    border-radius: size(8);
+    padding: size(24);
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: inherit;
+    }
+  }
+
+  &-box:nth-child(1) {
+    grid-area: a;
+  }
+  &-box:nth-child(2) {
+    grid-area: b;
+  }
+  &-box:nth-child(3) {
+    grid-area: c;
+  }
+  &-box:nth-child(4) {
+    grid-area: d;
+  }
+  &-box:nth-child(5) {
+    grid-area: e;
+  }
+  &-box:nth-child(6) {
+    grid-area: f;
+  }
+}

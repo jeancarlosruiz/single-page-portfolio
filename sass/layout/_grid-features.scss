@@ -1,0 +1,32 @@
+@use '../abstracts/' as *;
+
+.grid-features {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, #{size(182)});
+  gap: size(24);
+  grid-template-areas:
+    'a a'
+    'a a'
+    'b c'
+    'd d'
+    'e e'
+    'f f';
+
+  @include mq(medium) {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, #{size(182)});
+    grid-template-areas:
+      'a a b c'
+      'a a d d'
+      'e e f f';
+  }
+
+  @include mq(large) {
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(2, #{size(182)});
+    grid-template-areas:
+      'a a b c d d'
+      'a a e e f f';
+  }
+}
