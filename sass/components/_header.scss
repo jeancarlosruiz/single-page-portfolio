@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+.header {
+  margin-block-start: size(16);
+
+  @include mq(medium) {
+    margin-block-start: size(34);
+  }
+}

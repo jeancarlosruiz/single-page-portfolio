@@ -4,8 +4,22 @@
 
 .flex-group-1 {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: var(--flex-column-gap, $flex-group-gap);
-  row-gap: var(--flex-row-gap, calc($flex-group-gap) / 2);
-  width: fit-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-group-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--flex-gap, $flex-group-gap);
+
+  @include mq(medium) {
+    --flex-gap: #{size(28)};
+  }
+
+  @include mq(large) {
+    --flex-gap: #{size(22)};
+  }
 }

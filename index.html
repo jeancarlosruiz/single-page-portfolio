@@ -11,22 +11,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Single-page design portfolio</title>
     <link rel="stylesheet" href="/sass/main.scss" />
-    <style>
-      div {
-        width: 80%;
-        background-color: lightblue;
-        margin-inline: auto;
-      }
-    </style>
   </head>
 
   <body>
-    <!-- Free Consultation
-
-  Design solutions made easy
-
-  With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
-
+    <header class="header | container mx-auto flex-group-1">
+      <img src="assets/images/logo.svg" alt="" />
+      <button type="button" class="button" data-type="primary">
+        Free Consultation
+      </button>
+    </header>
+    <main class="container mx-auto" data-type="wide">
+      <section
+        class="hero-section | container flex-group-2 mx-auto text-center"
+      >
+        <h1 class="fs-900 fw-bold clr-neutral-900">
+          Design solutions made easy
+        </h1>
+        <p class="fs-300 fw-medium clr-neutral-200">
+          With over ten years of experience in various design disciplines, I’m
+          your one-stop shop for your design needs.
+        </p>
+      </section>
+    </main>
+    <!-- <footer class="footer | container mx-auto flex-group-1">
+      <img src="assets/images/logo.svg" alt="" />
+      <button type="button" class="button" data-type="primary">
+        Free Consultation
+      </button>
+    </footer> -->
+    <!-- 
   Graphic Design
   UI/UX
   Apps

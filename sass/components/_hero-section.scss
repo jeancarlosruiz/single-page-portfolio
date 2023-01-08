@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+.hero-section {
+  padding-block-start: size(32);
+
+  p {
+    width: 75%;
+  }
+
+  @include mq(medium) {
+    padding-block-start: size(64);
+
+    p {
+      width: 65%;
+    }
+  }
+
+  @include mq(large) {
+    padding-block-start: size(66);
+
+    p {
+      width: 60%;
+    }
+  }
+}
