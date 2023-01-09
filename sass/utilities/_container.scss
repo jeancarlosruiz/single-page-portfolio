@@ -1,13 +1,9 @@
 @use '../abstracts/' as *;
 
 .container {
-  --max-width: #{$container-max-width};
-
-  width: min(100% - 2rem, var(--max-width));
+  width: min(100% - 2rem, $container-max-width);
 }
 
 .container[data-type='wide'] {
-  --max-width: #{$container-max-width-wide};
-
-  width: min(100%, var(--max-width));
+  width: min(100%, $container-max-width-wide);
 }

@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.contact-section {
+  text-align: center;
+  padding-block: size(48);
+  padding-inline: size(24);
+  border-radius: size(10);
+
+  @include mq(medium) {
+    padding-block: size(60);
+    padding-inline: size(75);
+  }
+
+  @include mq(large) {
+    text-align: start;
+    padding-block: size(80);
+    padding-inline: size(65);
+  }
+}

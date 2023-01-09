@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+.footer {
+  padding-block-start: #{size(40)};
+  padding-block-end: #{size(32)};
+
+  @include mq(medium) {
+    padding-block-start: #{size(56)};
+    padding-block-end: #{size(56)};
+  }
+
+  @include mq(large) {
+    padding-block-start: #{size(56)};
+    padding-block-end: #{size(64)};
+  }
+}
