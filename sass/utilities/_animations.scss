@@ -1,0 +1,98 @@
+@use '../abstracts/' as *;
+
+.title-animation {
+  transition: all ease-out 1s;
+  animation-name: title;
+  animation-duration: 1s;
+}
+
+@keyframes title {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-x-right {
+  transition: all ease-out 1s;
+  animation-name: slideXRight;
+  animation-delay: 800ms;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideXRight {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-x-left {
+  transition: all ease-out 1s;
+  animation-name: slideXLeft;
+  animation-delay: 800ms;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideXLeft {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-y-top {
+  transition: all ease-out 1s;
+  animation-name: slideYTop;
+  animation-delay: 800ms;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideYTop {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-y-bottom {
+  transition: all ease-out 1s;
+  animation-name: slideYBottom;
+  animation-delay: 800ms;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideYBottom {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

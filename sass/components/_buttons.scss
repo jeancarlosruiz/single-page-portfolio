@@ -5,14 +5,19 @@
   display: inline-flex;
   cursor: pointer;
   text-decoration: none;
-  line-height: 1;
+  font-weight: $fw-700;
+  font-size: size(14);
+  line-height: 2;
   border: 0;
   border-radius: size(28);
   transition: 275ms ease;
   padding: size(14) size(45);
-  font-weight: $fw-700;
-  font-size: size(16);
   color: clr(neutral, 100);
+
+  @include mq(medium) {
+    font-size: size(16);
+    line-height: 1.75;
+  }
 
   &[data-type='primary'] {
     background-color: clr(neutral, 900);

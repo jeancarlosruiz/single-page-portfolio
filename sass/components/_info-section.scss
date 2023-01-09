@@ -1,0 +1,23 @@
+@use '../abstracts/' as *;
+
+.info-section {
+  width: calc(100% - 2rem);
+  margin-inline: auto;
+  padding-block-start: size(100);
+  padding-block-end: size(100);
+  text-align: center;
+
+  @include mq(medium) {
+    width: min(100%, $container-max-width);
+    padding-block-start: size(120);
+    padding-block-end: size(120);
+    text-align: start;
+    transform: translateX(-1rem);
+  }
+
+  @include mq(large) {
+    padding-block-start: size(136);
+    padding-block-end: size(88);
+    transform: none;
+  }
+}

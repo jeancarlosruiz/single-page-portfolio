@@ -24,10 +24,11 @@
 
     <!-- Main Content -->
     <main class="container mx-auto" data-type="wide">
+      <!-- Hero Section -->
       <section
         class="hero-section | container flex-group-2 mx-auto text-center"
       >
-        <h1 class="fs-900 fw-bold clr-neutral-900">
+        <h1 class="fs-900 fw-bold clr-neutral-900 title-animation">
           Design solutions made easy
         </h1>
         <p class="fs-300 fw-medium clr-neutral-200">
@@ -35,40 +36,91 @@
           your one-stop shop for your design needs.
         </p>
       </section>
+
+      <!-- Features Section -->
       <section class="features | grid-features container mx-auto">
-        <div class="features-box | bg-primary-500">
+        <div class="features-box | bg-primary-500 slide-x-right">
           <img
             src="assets/images/pattern-graphic-design.svg"
+            loading="lazy"
             alt="Features img"
           />
-          <h2 class="fs-500 fw-bold clr-neutral-100">Graphic Design</h2>
+          <h2 class="fs-500 fw-bold clr-neutral-100">
+            <a href="#">Graphic Design</a>
+          </h2>
         </div>
-        <div class="features-box | bg-primary-200">
-          <img src="assets/images/pattern-ui-ux.svg" alt="Features img" />
-          <h2 class="fs-500 fw-bold clr-neutral-100">UI/UX</h2>
+        <div class="features-box | bg-primary-200 slide-y-top">
+          <img
+            src="assets/images/pattern-ui-ux.svg"
+            loading="lazy"
+            alt="Features img"
+          />
+          <h2 class="fs-500 fw-bold clr-neutral-100"><a href="#">UI/UX</a></h2>
         </div>
-        <div class="features-box | bg-primary-100">
-          <img src="assets/images/pattern-apps.svg" alt="Features img" />
-          <h2 class="fs-500 fw-bold clr-neutral-100">Apps</h2>
+        <div class="features-box | bg-primary-100 slide-y-top">
+          <img
+            src="assets/images/pattern-apps.svg"
+            loading="lazy"
+            alt="Features img"
+          />
+          <h2 class="fs-500 fw-bold clr-neutral-100"><a href="#">Apps</a></h2>
         </div>
-        <div class="features-box | bg-primary-300">
+        <div class="features-box | bg-primary-300 slide-y-bottom">
           <img
             src="assets/images/pattern-illustrations.svg"
+            loading="lazy"
             alt="Features img"
           />
-          <h2 class="fs-500 fw-bold clr-neutral-100">Photography</h2>
+          <h2 class="fs-500 fw-bold clr-neutral-100">
+            <a href="#">Illustrations</a>
+          </h2>
         </div>
-        <div class="features-box | bg-primary-400">
-          <img src="assets/images/pattern-photography.svg" alt="Features img" />
-          <h2 class="fs-500 fw-bold clr-neutral-100">Illustrations</h2>
+        <div class="features-box | bg-primary-400 slide-x-left">
+          <img
+            src="assets/images/pattern-photography.svg"
+            loading="lazy"
+            alt="Features img"
+          />
+          <h2 class="fs-500 fw-bold clr-neutral-100">
+            <a href="#">Photography</a>
+          </h2>
         </div>
-        <div class="features-box | bg-primary-600">
+        <div class="features-box | bg-primary-600 slide-x-left">
           <img
             src="assets/images/pattern-motion-graphics.svg"
+            loading="lazy"
             alt="Features img"
           />
-          <h2 class="fs-500 fw-bold clr-neutral-100">Motion Graphics</h2>
+          <h2 class="fs-500 fw-bold clr-neutral-100">
+            <a href="#">Motion Graphics</a>
+          </h2>
         </div>
+      </section>
+
+      <!-- Info section -->
+      <section class="info-section | flex-group-3">
+        <div>
+          <img
+            src="assets/images/image-amy.webp"
+            loading="lazy"
+            alt="Amy img"
+          />
+        </div>
+
+        <article class="flex-group-4">
+          <h2 class="fs-800 fw-bold clr-neutral-900">
+            I’m Amy, and I’d love to work on your next project
+          </h2>
+          <p class="fs-300">
+            I love working with others to create beautiful design solutions.
+            I’ve designed everything from brand illustrations to complete mobile
+            apps. I’m also handy with a camera!
+          </p>
+          <button type="button" class="button" data-type="secondary">
+            Free Consultation
+          </button>
+        </article>
+        <!-- img, article -->
       </section>
     </main>
     <!-- <footer class="footer | container mx-auto flex-group-1">
@@ -77,15 +129,7 @@
         Free Consultation
       </button>
     </footer> -->
-    <!-- 
-
-  I’m Amy, and I’d love to work on your next project
-
-  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
-  to complete mobile apps. I’m also handy with a camera!
-
-  Free Consultation
-
+    <!--
   My Work
 
   Book a call with me

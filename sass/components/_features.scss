@@ -2,6 +2,7 @@
 
 .features {
   padding-block-start: size(32);
+  cursor: pointer;
 
   &-box {
     display: inline-flex;
@@ -10,11 +11,21 @@
     padding: size(24);
     position: relative;
 
+    h2::after {
+      content: '';
+      height: size(2);
+      width: 0%;
+      background-color: clr(neutral, 100);
+      display: block;
+      transition: 500ms ease;
+    }
+
     img {
       position: absolute;
       top: 0;
       right: 0;
       padding: inherit;
+      transition: 500ms ease;
     }
   }
 
@@ -35,5 +46,15 @@
   }
   &-box:nth-child(6) {
     grid-area: f;
+  }
+}
+
+.features-box:is(:hover, :focus) {
+  img {
+    scale: 1.1;
+  }
+
+  h2::after {
+    width: 100%;
   }
 }

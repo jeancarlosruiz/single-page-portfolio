@@ -1,3 +1,8 @@
+Ideas para hacer en el features (animaciones)
+
+1. Hover or focus texto subrayado, outlines or scale.
+2. Animaciones al entrar a la pagina.
+
 ### Prettier
 
 ## .prettierrc

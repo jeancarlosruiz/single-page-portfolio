@@ -26,7 +26,7 @@
     grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(2, #{size(182)});
     grid-template-areas:
-      'a a b c d d'
-      'a a e e f f';
+      'a a b c e e'
+      'a a d d f f';
   }
 }
