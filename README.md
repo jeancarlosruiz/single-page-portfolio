@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/jeancarlosruiz/single-page-portfolio](https://github.com/jeancarlosruiz/single-page-portfolio)
+- Live Site URL: [https://jeancarlosruiz.github.io/single-page-portfolio/](https://jeancarlosruiz.github.io/single-page-portfolio/)
 
 ## My process
 
