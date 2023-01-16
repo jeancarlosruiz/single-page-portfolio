@@ -104,22 +104,12 @@
   }
 }
 
-// .flex-group-7 {
-//   background-color: clr(neutral, 200);
+.flex-group-7 {
+  --flex-gap: #{size(32)};
 
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   button {
-//     all: unset;
-//     background-color: clr(neutral, 900);
-//     padding: 20px;
-//     border-radius: 50%;
-//     display: inline-flex;
-
-//     &:is(:hover, :focus) {
-//       background-color: clr(primary, 500);
-//     }
-//   }
-// }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--flex-gap, $flex-group-gap);
+}

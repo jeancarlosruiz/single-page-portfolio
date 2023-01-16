@@ -1,39 +1,33 @@
 'use strict';
-/////////////////////////
-// SELECTING ELEMENTS //
-///////////////////////
 
-// Hamburger elements
-const hamburgerBtn = document.querySelector('.hamburger-btn');
-const headerNav = document.querySelector('.header-nav');
-const overlay = document.querySelector('.overlay');
+const prevBtn = document.querySelector('.button--control.prev');
+const nextBtn = document.querySelector('.button--control.next');
 
-//////////////////////////////////////
-// FUNCTIONS TO DO NOT REPEAT CODE //
-////////////////////////////////////
+// Swiper config
+const swiper = new Swiper('.swiper', {
+  // Slide repeat from the beginning = true
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  grabCursor: true,
 
-// Hamburger function
-const toggleClasses = function () {
-  hamburgerBtn.classList.toggle('active');
-  headerNav.classList.toggle('open');
-  overlay.classList.toggle('hidden');
-};
+  // The second image is centered.
+  initialSlide: 2,
 
-/////////////////////////////
-// ADDEVENT FUNCTIONALITIES //
-///////////////////////////
+  // Gap in px
+  spaceBetween: 15,
 
-// Hamburger function
-hamburgerBtn.addEventListener('click', () => {
-  toggleClasses();
+  // Meadia query for the gap in the tablet version.
+  breakpoints: {
+    768: {
+      spaceBetween: 30,
+    },
+  },
 });
 
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && hamburgerBtn.classList.contains('active')) {
-    toggleClasses();
-  }
+prevBtn.addEventListener('click', () => {
+  swiper.slidePrev();
 });
-
-overlay.addEventListener('click', () => {
-  toggleClasses();
+nextBtn.addEventListener('click', () => {
+  swiper.slideNext();
 });

@@ -1,9 +1,15 @@
 @use '../abstracts/' as *;
 
 .container {
-  width: min(100% - 2rem, $container-max-width);
+  width: calc(100% - #{size(32)});
+  max-width: $container-max-width;
+
+  @include mq(medium) {
+    width: calc(100% - #{size(80)});
+  }
 }
 
 .container[data-type='wide'] {
-  width: min(100%, $container-max-width-wide);
+  width: 100%;
+  max-width: $container-max-width-wide;
 }

@@ -10,7 +10,16 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Single-page design portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="/sass/main.scss" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
   </head>
 
   <body>
@@ -23,7 +32,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto" data-type="wide">
+    <main class="container mx-auto hidden" data-type="wide">
       <!-- Hero Section -->
       <section
         class="hero-section | container flex-group-2 mx-auto text-center"
@@ -122,19 +131,38 @@
         </article>
       </section>
       <!-- MY WORK SECTION -->
-      <!-- <section class="flex-group-7">
-        <h2></h2>
-        <div></div>
-        <div>
-          <button>
+      <section class="work-section | flex-group-7">
+        <h2 class="fs-700 fw-bold clr-neutral-900">My Work</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/image-slide-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-slide-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-slide-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-slide-4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/image-slide-5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="button-controls">
+          <button class="button button--control prev">
             <img src="assets/images/icon-arrow-left.svg" alt="" />
           </button>
-          <button>
+          <button class="button--control next">
             <img src="assets/images/icon-arrow-right.svg" alt="" />
           </button>
         </div>
-      </section> -->
-      <!-- MY WORK SECTION END -->
+      </section>
+
+      <!-- Contact Section -->
       <section class="contact-section | container mx-auto bg-neutral-900">
         <div class="flex-group-5">
           <div class="flex-group-6">
@@ -151,14 +179,13 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer | container mx-auto flex-group-1">
       <img src="assets/images/logo.svg" alt="Logo" />
       <button type="button" class="button" data-type="primary">
         Free Consultation
       </button>
     </footer>
-
-    <!-- My Work -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>
